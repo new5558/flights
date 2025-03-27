@@ -30,6 +30,7 @@ def get_flights_from_filter(
         "tfu": "EgQIABABIgA",
         "curr": currency,
     }
+    print(data.decode("utf-8"), "tfs")
 
     if mode in {"common", "fallback"}:
         try:
