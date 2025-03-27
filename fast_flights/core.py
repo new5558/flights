@@ -64,6 +64,7 @@ def get_flights(
     seat: Literal["economy", "premium-economy", "business", "first"],
     fetch_mode: Literal["common", "fallback", "force-fallback", "local"] = "common",
     max_stops: Optional[int] = None,
+    currency="",
 ) -> Result:
     return get_flights_from_filter(
         TFSData.from_interface(
@@ -74,6 +75,7 @@ def get_flights(
             max_stops=max_stops,
         ),
         mode=fetch_mode,
+        currency=currency,
     )
 
 
