@@ -29,6 +29,7 @@ def get_flights_from_filter(
         "hl": "en",
         "tfu": "EgQIABABIgA",
         "curr": currency,
+        "gl": "th",
     }
     print(data.decode("utf-8"), "tfs")
 
